@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -6,15 +6,12 @@ class Program
     {
         Console.Write("Ievadiet skaitli: ");
         int n = int.Parse(Console.ReadLine());
+        int faktorials = 1;
 
+        for (int i = 1; i <= n; i++)
         {
-            long faktorials = 1;
-
-            for (int i = 1; i <= n; i++)
-            {
-                faktorials *= i;
-                Console.WriteLine($"{i} * {faktorials} = {faktorials}");
-            }
+            faktorials *= i;
+            Console.WriteLine($"{i} * {faktorials} = {faktorials}");
         }
     }
 }
